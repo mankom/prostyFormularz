@@ -25,11 +25,15 @@
                 <label   class="form__text--label" for="surname">Your surname: </label>
                 <input  class="form__text--input" type="text" name="surname" id="surname" placeholder="please enter Your surname">
             </p>
+                        <p class="form__riddle form__text">
+                    <label class="form__riddle--label" for="riddle">Riddle: </label>
+                    <input type="text" name="riddle" id="riddle" placeholder="please enter riddle">
+                </p>
             <p class="form__age form__number">
-                <label   class="form__text--label" for="age">Your age: </label>
-                <input  class="form__age--input" type="number" name="age" id="age" placeholder="age" min="0" max="999">
+                <label   class="form__text--label" for="age">Your age*: </label>
+                <input  class="form__age--input" type="number" name="age" id="age" placeholder="age" min="0" max="999" required>
             </p>
-            <fieldset class="form__fieldset" aria-required="true">
+            <fieldset class="form__fieldset">
                 <legend>I'm...*</legend>
                 <p class="form__radio">
                     <input class="form__radio--input" type="radio" name="Good" id="radio1">
