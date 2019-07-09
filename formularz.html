@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Prosty formularz</h1>
+    </header>
+    <main>
+        <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
+            <p class="form__directing">Uzupełnij pola:</p>
+            <p class="form__name form__text">
+                <label class="form__text--label" for="name">Your name: </label>
+                <input type="text" name="name" id="name" placeholder="please enter Your name">
+            </p>
+            <p class="form__surname form__text">
+                <label   class="form__text--label" for="surname">Your surname: </label>
+                <input  class="form__text--input" type="text" name="surname" id="surname" placeholder="please enter Your surname">
+            </p>
+            <p class="form__age form__number">
+                <label   class="form__text--label" for="age">Your age: </label>
+                <input  class="form__age--input" type="number" name="age" id="age" placeholder="age" min="0" max="999">
+            </p>
+            <fieldset class="form__fieldset" aria-required="true">
+                <legend>I'm...*</legend>
+                <p class="form__radio">
+                    <input class="form__radio--input" type="radio" name="Good" id="radio1">
+                    <label class="form__radio--label" for="radio1">Good</label>
+                </p>
+                <p class="form__radio">
+                    <input class="form__radio--input" type="radio" name="Bad" id="radio2">
+                    <label class="form__radio--label" for="radio2">
+                        Bad
+                    </label>
+                </p>
+                <p class="form__radio">
+                    <input class="form__radio--input" type="radio" name="Ugly" id="radio3">
+                    <label class="form__radio--label" for="radio3">Ugly</label>
+                </p>
+            </fieldset>
+            <p class="form__checkbox">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">Zgadzam się na nękanie mnie suchymi żartami rozsyłanymi drogą mailową.</label>
+            </p>
+            <p class="form__email">
+                <label  class="form__email--label" for="email">Your email: </label>
+                <input   class="form__email--input" type="email" name="email" id="email">
+            </p>
+            <input class="form__send" type="submit" value="Send the form"><br>
+            <footer>* - pole wymagane.</footer>
+        </form>
+    </main>
+</body>
+
+</html>
